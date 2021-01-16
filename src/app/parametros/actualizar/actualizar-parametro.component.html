@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-title">{{titulo}}</h5>
+        <form style="margin-top:4%">
+            
+           <!--  <div class="form-group row">
+                <label for="idParametro" class="col-form-label col-sm-2"> idParametro: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="idParametro" [(ngModel)]="parametro.idParametro">       
+                    <div class="invalid-feedback">
+                       Debe ingresar el idParametro
+                   </div>   
+               </div>
+            </div> -->
+            
+            <div class="form-group row">
+                 <label for="nombre_parametro" class="col-form-label col-sm-2"> Nombre: </label>
+                 <div class="col-sm-6">
+                     <input type="text" class="form-control" name="nombre_parametro" [(ngModel)]="parametro.nombre_parametro" required>       
+                     <div class="invalid-feedback">
+                        Debe ingresar el nombre del parametro
+                    </div>   
+                </div>
+             </div>
+
+             <div class="form-group row">
+                <label for="descripcion" class="col-form-label col-sm-2"> Descripción: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="descripcion" [(ngModel)]="parametro.descripcion">        
+                </div>
+             </div>
+             
+             <div class="form-group row">
+                <label for="valor1" class="col-form-label col-sm-2"> Valor 1: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="valor1" [(ngModel)]="parametro.valor1">        
+                </div>
+             </div>
+             
+             <div class="form-group row">
+                <label for="valor2" class="col-form-label col-sm-2"> Valor 2: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="valor2" [(ngModel)]="parametro.valor2">        
+                </div>
+             </div> 
+
+<!--              <div class="form-group row">
+                <label for="flg_activo" class="col-form-label col-sm-2"> Flg activo: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="flg_activo" [(ngModel)]="parametro.flg_activo">        
+                </div>
+             </div>  -->
+             
+<!--              <div class="form-group row">
+                <label for="id_sesion_ingresa" class="col-form-label col-sm-2"> idSesionIngresa: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="id_sesion_ingresa" [(ngModel)]="parametro.id_sesion_ingresa">        
+                </div>
+             </div> -->
+
+             <div class="form-group row">
+                <label for="id_sesion_modifica" class="col-form-label col-sm-2"> idSesionModifica: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="id_sesion_modifica" [(ngModel)]="parametro.id_sesion_modifica">        
+                </div>
+             </div>
+
+<!--              <div class="form-group row">
+                <label for="flg_eliminado" class="col-form-label col-sm-2"> Flg Eliminado: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" name="flg_eliminado" [(ngModel)]="parametro.flg_eliminado">        
+                </div>
+             </div> -->
+
+             <button class="btn btn-success" role="button" (click)='update()' >Actualizar</button>
+
+        </form>
+    </div>
+</div> 
